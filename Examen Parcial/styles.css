@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.property-card {
+  background-color: white;
+  width: calc(25% - 20px);
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: scale(1.05);
+}
+
+.property-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.property-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.property-card p {
+  margin: 5px 0;
+}
+
+.property-card a {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.property-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-detail h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.property-detail p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.property-detail img {
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+}
+
+.property-detail .btn {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.property-detail .btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .property-card {
+    width: calc(100% - 20px);
+  }
+
+  .properties {
+    justify-content: center;
+  }
+
+  .property-card h3 {
+    font-size: 1.2em;
+  }
+
+  .property-card p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+}
